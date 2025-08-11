@@ -11,7 +11,8 @@
     "seed": "ts-node prisma/seeds/index.ts",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "typecheck": "tsc --noEmit"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.33.0",
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
@@ -37,6 +39,9 @@
     "@types/node": "^20.3.2",
     "@types/node-cron": "^3.0.8",
     "@types/nodemailer": "^6.4.8",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.33.0",
     "jest": "^29.6.2",
     "prettier": "^3.6.2",
     "prisma": "^5.1.1",
