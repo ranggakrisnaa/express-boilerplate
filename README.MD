@@ -1,4 +1,4 @@
-# Node Wave Base Repositories for Backend
+# Express Boilerplate Repositories for Backend
 
 
 ## Tech Stacks 
